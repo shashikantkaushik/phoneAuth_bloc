@@ -57,6 +57,7 @@ class AuthCubit extends Cubit<AuthState> {
   }
 
   void logOut() async {
+    print('log out');
     await _auth.signOut();
     emit( AuthLoggedOutState() );
   }
